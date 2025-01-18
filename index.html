@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - Responsive Index Page</title>
+    <style>
+        /* General resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Main content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+        
+        .intro h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Card layout */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .feature-card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #333;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .intro h2 {
+                font-size: 1.6rem;
+            }
+
+            .intro p {
+                font-size: 1rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.4rem;
+            }
+
+            .feature-card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to ChatGPT</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>What is ChatGPT?</h2>
+            <p>ChatGPT is an advanced AI language model developed by OpenAI that can help you with a variety of tasks. From answering questions to creating content, it's like having a smart assistant at your fingertips.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Fast & Efficient</h3>
+                <p>Get responses instantly, no matter the complexity of your questions. ChatGPT is designed for quick and accurate replies.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Learn & Assist</h3>
+                <p>Whether you're studying or working, ChatGPT can assist with learning new concepts or completing tasks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Creative Writing</h3>
+                <p>Need help with writing stories, articles, or creative pieces? ChatGPT can generate content to suit your needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>24/7 Availability</h3>
+                <p>ChatGPT is always ready to assist you, day or night. It’s available whenever you need help or information.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ChatGPT. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
